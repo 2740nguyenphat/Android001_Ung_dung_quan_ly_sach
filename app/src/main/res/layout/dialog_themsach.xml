@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM SÁCH"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/FF3895F1"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập tên sách"
+                android:inputType="text"
+                android:id="@+id/etNameBook"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Nhập tác giả"
+                android:id="@+id/etTacGia"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập nhà xuất bản"
+                android:inputType="text"
+                android:id="@+id/etNhaXB"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập năm xuất bản"
+                android:inputType="number"
+                android:id="@+id/etNamXB"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnTheLoai"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái: Sẵn có"
+                android:textColor="#48ED50"
+                android:enabled="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnAddImg"
+                android:src="@drawable/baseline_add_a_photo_24"/>
+        </LinearLayout>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGhiChu"
+        android:hint="Ghi chú(Tùy chọn)"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:id="@+id/btnSave"
+        android:background="#388E3C"
+        android:textColor="@color/white"
+        android:layout_gravity="end"/>
+</LinearLayout>

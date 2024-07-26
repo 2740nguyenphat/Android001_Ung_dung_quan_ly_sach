@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/iHome"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/iQLS"
+        android:title="Quản lý sách"
+        android:icon="@drawable/baseline_book_24"/>
+    <item
+        android:id="@+id/iQLTK"
+        android:title="Quản lý tài khoản"
+        android:icon="@drawable/baseline_person_24"/>
+    <item
+        android:id="@+id/iQLDG"
+        android:title="Quản lý độc giả"
+        android:icon="@drawable/baseline_supervisor_account_24"/>
+    <item
+        android:id="@+id/iQLPM"
+        android:title="Quản lý phiếu mượn"
+        android:icon="@drawable/baseline_edit_note_24"/>
+    <item
+        android:id="@+id/iLogOut"
+        android:title="Thoát"
+        android:icon="@drawable/baseline_power_settings_new_24"/>
+</menu>

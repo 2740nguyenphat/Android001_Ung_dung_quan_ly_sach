@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/iHomeU"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/iQLTTCN"
+        android:title="Quản lý thông tin cá nhân"
+        android:icon="@drawable/baseline_person_search_24"/>
+    <item
+        android:id="@+id/iQLPM"
+        android:title="Phiếu mượn"
+        android:icon="@drawable/baseline_sticky_note_2_24"/>
+    <item
+        android:id="@+id/iLogOutU"
+        android:title="Thoát"
+        android:icon="@drawable/baseline_power_settings_new_24"/>
+</menu>

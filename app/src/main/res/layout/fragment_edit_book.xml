@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="24dp"
+tools:context=".fragment.admin.EditBookFragment">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="XEM THÔNG TIN SÁCH"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="@color/FF3895F1"
+    android:id="@+id/txtTitle"
+    android:gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sách"
+            android:inputType="text"
+            android:id="@+id/etNameBook"
+            android:enabled="false"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:enabled="false"
+            android:hint="Nhập tác giả"
+            android:id="@+id/etTacGia"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập nhà xuất bản"
+            android:inputType="text"
+            android:enabled="false"
+            android:id="@+id/etNhaXB"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập năm xuất bản"
+            android:inputType="number"
+            android:enabled="false"
+            android:id="@+id/etNamXB"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lựa chọn thể loại:"
+            android:textSize="18sp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnTheLoai" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lựa chọn trạng thái:"
+            android:textSize="18sp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnTrangThai"/>
+            <View
+                android:id="@+id/viewOverlay2"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:clickable="true"
+                android:visibility="invisible"
+                android:background="@android:color/transparent" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chỉnh sửa:"
+                android:layout_gravity="center"
+                android:padding="5dp"/>
+            <ToggleButton
+                android:id="@+id/tgbEdit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/toggle_selector"/>
+        </LinearLayout>
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnAddImg"
+                android:src="@drawable/baseline_add_a_photo_24" />
+    </LinearLayout>
+</LinearLayout>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/etGhiChu"
+    android:hint="Ghi chú(Tùy chọn)"
+    android:enabled="false"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Lưu"
+    android:id="@+id/btnSave"
+    android:background="#388E3C"
+    android:textColor="@color/white"
+    android:layout_gravity="end"
+    android:visibility="invisible"/>
+</LinearLayout>
